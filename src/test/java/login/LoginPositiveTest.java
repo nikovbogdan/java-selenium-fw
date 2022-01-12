@@ -3,7 +3,7 @@ package login;
 import base.BaseTest;
 import org.testng.annotations.Test;
 
-public class LoginTestPositive extends BaseTest {
+public class LoginPositiveTest extends BaseTest {
 
     @Test
     public void loginWithValidCredentials(){

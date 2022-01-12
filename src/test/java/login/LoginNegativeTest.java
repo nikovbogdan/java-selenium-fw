@@ -4,7 +4,7 @@ import base.BaseTest;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
-public class LoginTestNegative extends BaseTest {
+public class LoginNegativeTest extends BaseTest {
     
     WebDriver driver;
 

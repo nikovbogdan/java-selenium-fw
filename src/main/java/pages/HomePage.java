@@ -20,4 +20,8 @@ public class HomePage {
         return new LoginPage(driver);
     }
 
+    public CheckboxPage clickCheckboxes() {
+        clickLink("Checkboxes");
+        return new CheckboxPage(driver);
+    }
 }
