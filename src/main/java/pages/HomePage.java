@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class HomePage {
+
     WebDriver driver;
 
     public HomePage(WebDriver driver) {
@@ -14,7 +15,6 @@ public class HomePage {
         driver.findElement(By.linkText(linkText)).click();
     }
 
-
     public LoginPage clickFormAuthentication(){
         clickLink("Form Authentication");
         return new LoginPage(driver);
@@ -23,5 +23,10 @@ public class HomePage {
     public CheckboxPage clickCheckboxes() {
         clickLink("Checkboxes");
         return new CheckboxPage(driver);
+    }
+
+    public DropdownPage clickDropdown() {
+        clickLink("Dropdown");
+        return new DropdownPage(driver);
     }
 }

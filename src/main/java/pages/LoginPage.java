@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
-
 public class LoginPage {
 
     private static final By USERNAME = By.id("username");
@@ -13,7 +12,7 @@ public class LoginPage {
     private static final By RED_MESSAGE = By.cssSelector(".flash.error");
     private static final By GREEN_MESSAGE = By.cssSelector(".flash.success");
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;

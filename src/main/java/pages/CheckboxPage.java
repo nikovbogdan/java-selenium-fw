@@ -8,10 +8,9 @@ import org.testng.Assert;
 
 public class CheckboxPage {
 
-     WebDriver driver;
+    private final WebDriver driver;
     private final static By CHECKBOX_1 = By.xpath("//input[@type='checkbox'][1]");
     private final static By CHECKBOX_2 = By.xpath("//input[@type='checkbox'][2]");
-
 
     public CheckboxPage(WebDriver driver) {
         this.driver = driver;
