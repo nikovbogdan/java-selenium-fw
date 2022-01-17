@@ -6,6 +6,7 @@
     <packages>
         <package name="checkboxes"/>
         <package name="login"/>
+        <package name="dropdowns"/>
     </packages>
     </test>
 
