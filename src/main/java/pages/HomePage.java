@@ -29,4 +29,9 @@ public class HomePage {
         clickLink("Dropdown");
         return new DropdownPage(driver);
     }
+
+    public DynamicLoadingPage clickDynamicLoading() {
+        clickLink("Dynamic Loading");
+        return new DynamicLoadingPage(driver);
+    }
 }
