@@ -45,4 +45,9 @@ public class HomePage {
         clickLink("Context Menu");
         return new ContextPage(driver);
     }
+
+    public HandlesPage clickMultipleWindows() {
+        clickLink("Multiple Windows");
+        return new HandlesPage(driver);
+    }
 }
