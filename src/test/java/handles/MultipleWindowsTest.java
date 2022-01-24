@@ -1,7 +1,6 @@
-package handels;
+package handles;
 
 import base.BaseTest;
-import core.Waiter;
 import org.testng.annotations.Test;
 
 public class MultipleWindowsTest extends BaseTest {

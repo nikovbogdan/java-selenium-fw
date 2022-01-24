@@ -8,6 +8,7 @@
             <class name="checkboxes.CheckboxTest"/>
             <class name="dropdowns.DropdownTest"/>
             <class name="wait.WaitTest"/>
+            <class name="handles.MultipleWindowsTest"/>
         </classes>
     </test>
 
