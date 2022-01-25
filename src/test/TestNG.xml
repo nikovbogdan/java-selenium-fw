@@ -3,12 +3,13 @@
 <suite name="Suite1" parallel="classes">
     <test name="Regression1">
         <classes>
-            <class name="login.form.LoginPositiveTest"/>
-            <class name="login.form.LoginNegativeTest"/>
             <class name="checkboxes.CheckboxTest"/>
             <class name="dropdowns.DropdownTest"/>
             <class name="wait.WaitTest"/>
             <class name="handles.MultipleWindowsTest"/>
+            <class name="login.LoginNegativeTest"/>
+            <class name="login.LoginPositiveTest"/>
+            <class name="slider.HorizontalSliderTest"/>
         </classes>
     </test>
 

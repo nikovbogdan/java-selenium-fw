@@ -50,4 +50,9 @@ public class HomePage {
         clickLink("Multiple Windows");
         return new HandlesPage(driver);
     }
+
+    public HorizontalSliderPage clickHorizontalSlider() {
+        clickLink("Horizontal Slider");
+        return new HorizontalSliderPage(driver);
+    }
 }
