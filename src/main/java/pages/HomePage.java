@@ -55,4 +55,9 @@ public class HomePage {
         clickLink("Horizontal Slider");
         return new HorizontalSliderPage(driver);
     }
+
+    public AddRemovePage clickAddRemove() {
+        clickLink("Add/Remove Elements");
+        return new AddRemovePage(driver);
+    }
 }
