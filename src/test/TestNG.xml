@@ -10,6 +10,7 @@
             <class name="login.LoginNegativeTest"/>
             <class name="login.LoginPositiveTest"/>
             <class name="slider.HorizontalSliderTest"/>
+            <class name="addremove.AddRemoveElementTest"/>
         </classes>
     </test>
 

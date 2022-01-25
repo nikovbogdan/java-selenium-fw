@@ -13,6 +13,7 @@ public class AddRemoveElementTest extends BaseTest {
         addRemove.removeButtons(2);
         addRemove.verifyRemoveButtonsCount();
         addRemove.removeAllButtons();
+        addRemove.verifyRemoveButtonsCount();
 
     }
 }

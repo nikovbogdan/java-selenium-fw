@@ -25,8 +25,7 @@ public class AddRemovePage {
 
     public void verifyRemoveButtonsCount() {
         int size = driver.findElements(REMOVE_BUTTON).size();
-        System.out.println(size);
-        Assert.assertEquals(size,counter);
+        Assert.assertEquals(size, counter);
     }
 
     public void removeButtons(int numberOfButtons) {
@@ -39,5 +38,6 @@ public class AddRemovePage {
     public void removeAllButtons() {
         int size = driver.findElements(REMOVE_BUTTON).size();
         removeButtons(size);
+        counter = 0;
     }
 }
