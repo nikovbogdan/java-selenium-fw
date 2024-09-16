@@ -6,6 +6,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import java.time.Duration;
+
 public class Example2Page {
 
     private final WebDriver driver;
@@ -19,12 +21,12 @@ public class Example2Page {
 
     public void clickStartButton() {
         driver.findElement(START_BUTTON).click();
-        WebDriverWait wait = new WebDriverWait(driver,10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.invisibilityOf(driver.findElement(LOADING)));
     }
 
     public void verifyLoadedTextIs(String expectedText) {
-        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(LOADED_TEXT));
         Assert.assertEquals(driver.findElement(LOADED_TEXT).getText(),expectedText);
     }
